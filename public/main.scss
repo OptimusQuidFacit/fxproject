@@ -1,0 +1,23 @@
+$primary: #3c18ac;
+$secondary:#F3F2EB;
+$container-max-widths: (
+    sm: 500px,
+    md: 700px,
+    lg: 950px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-colors: (
+    "color-red": #fd1d1d,
+    "color-orange": #FF9900,
+    "color-blue": #0066CE,
+    "color-green": #006C31
+);
+
+$theme-colors: map-merge( $custom-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
